@@ -1,4 +1,4 @@
-package implementacao;
+package teste;
 
 public class Teste {
 

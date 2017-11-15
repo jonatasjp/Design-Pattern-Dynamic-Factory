@@ -1,11 +1,8 @@
-package implementacao;
+package implementacao2;
 
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
-
-import teste.Teste;
 
 public class FabricaDinamica {
 
@@ -37,14 +34,4 @@ public class FabricaDinamica {
 		}
 	}
 	
-	public static void main(String[] args) {
-		try {
-			FabricaDinamica f = new FabricaDinamica("configuracoes.properties");
-			f.criaImplementacao(Teste.class);
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
 }
