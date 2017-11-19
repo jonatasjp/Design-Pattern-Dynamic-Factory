@@ -4,7 +4,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
-import teste.Teste;
+import teste.Main;
 
 public class FabricaDinamica {
 
@@ -33,17 +33,6 @@ public class FabricaDinamica {
 			throw new IllegalArgumentException("Classe configurada não existe", e);
 		} catch (Exception e) {
 			throw new IllegalArgumentException("Não foi possível criar a implementação", e);
-		}
-	}
-	
-	public static void main(String[] args) {
-		try {
-			FabricaDinamica f = new FabricaDinamica("configuracoes.properties");
-			f.criaImplementacao(Teste.class);
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
 		}
 	}
 }
