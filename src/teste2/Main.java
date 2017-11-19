@@ -7,7 +7,7 @@ import implementacao2.FabricaDinamica;
 import implementacao2.GarcomDiretor;
 import implementacao2.PizzaBuilder;
 
-public class Teste {
+public class Main {
 
 	public static void main(String[] args) throws FileNotFoundException, IOException {
 		
@@ -16,7 +16,7 @@ public class Teste {
 		
 		new GarcomDiretor()
 				.defineBuilder(pizzaBuilder)
-				.montarPizza()
+				.montarPizza("grande")
 				.exibePizza();
 		
 	}
